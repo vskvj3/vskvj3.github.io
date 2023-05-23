@@ -26,6 +26,60 @@ body {
   justify-content: center;
 }
 
+/**************/
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 250px;
+  --speed: 10s;
+  --speed2: 5s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(
+    hsl(191, 97%, 70%, 85%),
+    hsl(265, 89%, 78%)
+  );
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+/* .gradient:hover {
+  animation: rotate  reverse var(--speed2) var(--easing) alternate infinite;
+} */
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+
+.ctr {
+  background-color: #282a36;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  overflow: hidden;
+  place-content: center;
+  align-items: center;
+  z-index: -100;
+}
+
+/* This is just to transition when you change the viewport size. */
+* {
+  transition: all 0.25s ease-out;
+}
+
+/**************/
+
 .termBackground {
   position: relative;
   top: 250px;
