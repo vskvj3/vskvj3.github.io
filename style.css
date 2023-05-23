@@ -168,7 +168,7 @@ animation: type 1.5s steps(8, end),blink .5s step-end  alternate;;
 animation-fill-mode: forwards;
 }
 
-p.type2 {
+p.line1 {
   width: 11em;
   opacity: 0;
   -webkit-animation: type2 0.5s steps(30, end);
@@ -178,7 +178,7 @@ p.type2 {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-p.type22 {
+p.line2 {
   width: 11em;
   opacity: 0;
   -webkit-animation: type2 0.4s steps(30, end);
