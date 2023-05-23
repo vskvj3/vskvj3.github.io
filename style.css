@@ -14,6 +14,7 @@
   --dark-yellow: #959b57;
   --green: #50fa7b;
   --dark-green: #37b156;
+  --cyan: #8be9fd;
   --foreground: #f8f8f2;
   --currentline: #44475a;
   --term-bg: #121420;
@@ -169,22 +170,33 @@ animation-fill-mode: forwards;
 }
 
 p.line1 {
-  width: 11em;
+  width: 10em;
   opacity: 0;
-  -webkit-animation: type2 0.5s steps(30, end);
-  animation: type2 0.5s steps(30, end);
+  -webkit-animation: type2 0.34s steps(30, end);
+  animation: type2 0.34s steps(30, end);
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 p.line2 {
-  width: 11em;
+  width: 27em;
   opacity: 0;
-  -webkit-animation: type2 0.4s steps(30, end);
-  animation: type2 0.4s steps(30, end);
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation: type2 0.92s steps(30, end);
+  animation: type2 0.92s steps(30, end);
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+p.line3 {
+  width: 20em;
+  opacity: 0;
+  -webkit-animation: type2 0.64s steps(30, end);
+  animation: type2 0.64s steps(30, end);
+  -webkit-animation-delay: 2.88s;
+  animation-delay: 2.88s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -194,8 +206,8 @@ p.type3 {
   opacity: 0;
   -webkit-animation: type3 1.5s steps(20, end), blink .5s step-end infinite alternate;
   animation: type3 1.5s steps(20, end), blink .5s step-end infinite alternate;
-  -webkit-animation-delay: 2.7s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -213,7 +225,7 @@ p.type3 {
 .hiddenPrompt {
   opacity: 0;
   animation: show 0.01s linear forwards;
-  animation-delay: 2.5s;
+  animation-delay: 3.6s;
 }
 
 .c-success {
@@ -234,7 +246,9 @@ p.type3 {
   }
 }
 
-
+a.social {
+  color: var(--cyan);
+}
 
 /* **************************** keyframes **************************************** */
 
