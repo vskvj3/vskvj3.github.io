@@ -27,6 +27,10 @@ body {
     background-color: #282a36;
 }
 
+a {
+    text-decoration: none;
+}
+
 #navbar {
     background-color: #000000;
     color: var(--foreground);
