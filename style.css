@@ -75,18 +75,18 @@ body {
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color:var(--background);
+    background-color: var(--currentline);
     border: none;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: var(--currentline);
+    background-color: #383b4a;
 }
 
 .btn:active {
-  background-color: var(--background);
-  transform: translateY(2px);
+    background-color: var(--background);
+    transform: translateY(2px);
 }
 
 .project-section {
