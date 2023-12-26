@@ -108,6 +108,8 @@ body {
 .project-item {
     background-color: var(--term-bg);
     color: var(--foreground);
+    text-decoration: none;
+    outline: none;
     width: 90%;
     min-width: 300px;
     max-width: 600px;
