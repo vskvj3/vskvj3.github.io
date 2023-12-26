@@ -57,7 +57,59 @@ body {
 }
 
 .social-icons {
+    margin-top: 10px;
+    margin-bottom: 10px;
     letter-spacing: 5px;
+}
+
+.button-bar {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 15px;
+    /* cursor: pointer; */
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:var(--background);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--currentline);
+}
+
+.btn:active {
+  background-color: var(--background);
+  transform: translateY(2px);
+}
+
+.project-section {
+    background-color: #000000;
+    color: var(--foreground);
+    width: 50%;
+    min-width: 400px;
+    max-width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: black 0px 5px 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+hr {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* blinking animation */
