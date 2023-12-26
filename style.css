@@ -119,11 +119,21 @@ body {
     padding-left: 20px;
     margin-top: 20px;
     padding-bottom: 20px;
-    border-radius: 5px;;
+    border-radius: 5px;
+    ;
     box-shadow: black 0px 5px 10px;
     text-align: left;
     justify-content: left;
     padding-top: 10px;
+}
+
+.pitem-header {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.pitem-content {
+    text-decoration: none;
 }
 
 .project-item:hover {
