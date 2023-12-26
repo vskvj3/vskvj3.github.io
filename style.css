@@ -56,6 +56,10 @@ body {
     padding-bottom: 10px;
 }
 
+.social-icons {
+    letter-spacing: 5px;
+}
+
 /* blinking animation */
 .del6s {
     animation: blink 2s linear infinite;
