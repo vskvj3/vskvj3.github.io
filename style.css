@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    font-family: "IBM Plex Mono", Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --background: #282a36;
+    --red: #ff5555;
+    --dark-red: #a83838;
+    --yellow: #f1fa8c;
+    --dark-yellow: #959b57;
+    --green: #50fa7b;
+    --dark-green: #37b156;
+    --cyan: #8be9fd;
+    --foreground: #f8f8f2;
+    --currentline: #44475a;
+    --term-bg: #121420;
+}
+
+body {
+    /* display: flex; */
+    background-color: #282a36;
+}
+
+#navbar {
+    background-color: #000000;
+    color: var(--foreground);
+    width: 50%;
+    min-width: 400px;
+    max-width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: black 0px 5px 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.blink {
+    animation: blink 2s linear infinite;
+}
+
+.blinkFrame {
+    display: inline-block;
+}
+
+/* blinking animation */
+.del6s {
+    animation: blink 2s linear infinite;
+    animation-delay: 2s;
+    letter-spacing: 0px;
+}
+
+.del5s {
+    animation: blink 2s linear infinite;
+    animation-delay: 1.6s;
+    letter-spacing: 0px;
+}
+
+.del4s {
+    animation: blink 2s linear infinite;
+    animation-delay: 1.2s;
+    letter-spacing: 0px;
+}
+
+.del3s {
+    animation: blink 2s linear infinite;
+    animation-delay: 0.8s;
+    letter-spacing: 0px;
+}
+
+.del2s {
+    animation: blink 2s linear infinite;
+    animation-delay: 0.4s;
+    letter-spacing: 0px;
+}
+
+.del1s {
+    animation: blink 2s linear infinite;
+    animation-delay: 0s;
+    letter-spacing: 0px;
+}
+
+.del0s {
+    animation: blink 2s ease-out infinite;
+}
+
+@keyframes blink {
+    50% {
+        color: black;
+    }
+}
